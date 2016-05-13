@@ -89,9 +89,7 @@ $(function(){
 				});
 			}else if( state == "取消" ){
 				$("#cancelSubBox").show();
-			}else{
-
-			}
+			};
 		});
 	});
 	$("#cancelSubBox .cel_btn").click(function() {
