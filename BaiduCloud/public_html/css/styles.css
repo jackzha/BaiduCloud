@@ -682,6 +682,7 @@
 }
 
 #list li{
+	background-color: #fff;
 	margin-bottom: 16px;
 	padding-bottom: 10px;
 	border:1px solid #ccc;
@@ -820,10 +821,55 @@
 	margin-right: 10px;
 }
 
+#list li div.comment_box{
+	display: none;
+	width: 380px;
+	background-color: #fff;
+	padding:10px;
+	position: relative;
+	
+}
+#list li div.comment_box span{
+	position: absolute;
+	top: 1px;
+	left: 60px;
+	width: 17px;
+	height: 13px;
+	background-image: url(../images/arraw.png);
+}
+#list li div.comment_box textarea{
+	width: 368px;
+	height: 60px;
+	color: #999;
+	font-size: 12px;
+	border:1px solid #CACACA;
+	padding: 5px;
+}
+#list li div.comment_box>div:after{
+	content: " ";
+	display: table;
+	clear: both;
+}
+#list li div.comment_box button{
+	width: 69px;
+	height: 24px;
+	color: #fff;
+	background-color: #E24C37;
+	float: right;
+	border: 1px solid #C43825;
+	
+	font-weight: bold;
+}
+
+
+
+
 #slider .carousel-inner div.item a img{
 	width: 368px;
 	height: 187px;
 }
+
+
 
 
 
@@ -974,6 +1020,60 @@
 	background-color: #207ADF;
 	color: #fff;
 }
+.subscribed{
+	background-position: -120px -131px;
+}
+
+#cancelSubBox{
+	position: fixed;
+	top: 30%;
+	left: 34%;
+	display: none;
+	width: 425px;
+	height: 194px;
+	background-color: #fff;
+	border:2px solid #999999;
+}
+#cancelSubBox h3{
+	font-size: 14px;
+	text-indent: 1em;
+	line-height: 42px;
+	font-family: "tahoma, arial, 宋体";
+	font-weight: bold;
+	margin: 0;
+	width: 400px;
+	height: 42px;
+	background-color: #F7F7F7;
+}
+#cancelSubBox p{
+	margin: 0;
+	padding: 22px;
+	height: 92px;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+}
+#cancelSubBox div{
+	padding-left: 102px;
+}
+#cancelSubBox div button{
+	border-radius: 2px;
+	width: 100px;
+	height: 40px;
+	font-size: 14px;
+	font-family: "宋体";
+}
+#cancelSubBox div button:nth-child(1){
+	background-color: #008BF5;
+	color: #fff;
+	border: 1px solid #0E6ECC;
+}
+#cancelSubBox div button:nth-child(2){
+	background-color: #EEEEEF;
+	color: #333;
+	border: 1px solid #ADACAC;
+}
+
 
 #guess ul.order div.people div a.button:hover em{
 	background-image: url(../images/concern_btn.png);
